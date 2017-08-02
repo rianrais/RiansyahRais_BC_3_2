@@ -1,0 +1,18 @@
+<h1>Kamar Yang Available:</h1>
+
+<table>
+  <tr>
+    <td>Nama Unit</td>
+    <td>Luas (Meter Persegi)</td>
+    <td>Harga (USD)</td>
+    <td>Gambar</td>
+    <td>Book</td>
+  </tr>
+  <tr *ngFor="let r of roomList">
+  <td>{{ r.Unit_Name }}</td>
+  <td>{{ r.Unit_Area }}</td>
+  <td>{{ r.Unit_Price }}</td>
+  <td>{{ r.Unit_Img }}</td>
+  <td><button class="btn btn-primary" (click)="bookUnit(r.Unit_ID)">Book</button></td>
+  </tr>
+</table>
